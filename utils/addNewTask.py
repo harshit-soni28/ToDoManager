@@ -1,5 +1,5 @@
-import state
-from checkDateFormat import checkDateFormat
+import utils.state as state
+from utils.checkDateFormat import checkDateFormat
 
 
 def addNewTask(task_list, description, dueDate):
