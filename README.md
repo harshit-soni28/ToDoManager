@@ -38,7 +38,9 @@ ToDoProject/
 │   │   ├── deleteTask.py
 │   │   ├── listAllTasks.py
 │   │   ├── state.py
-│   │   └── checkDateFormat.py
+│   │   ├── checkDateFormat.py
+│   │   ├── test_addNewTask.py
+│   │   └── test_checkDateFormat.py
 ├── README.md
 ```
 
@@ -62,6 +64,18 @@ Enter task description: Buy groceries
 Enter due date: 2025-02-20
 Task Added Successfully.
 ```
+
+## Running Tests
+To run all the test cases, use the following command:
+
+```sh
+PYTHONPATH=src python3 -m unittest discover -s src/utils -p 'test_*.py'
+```
+
+This command will:
+- Set the `PYTHONPATH` to the `src` directory.
+- Use the `unittest` discovery feature to find all test files in the `src/utils` directory that match the pattern `test_*.py`.
+- Run all the discovered test cases.
+
 ## License
 This project is licensed under the MIT License.
-
