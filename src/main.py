@@ -1,9 +1,3 @@
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-
 from utils.addNewTask import addNewTask
 from utils.markComplete import markComplete
 from utils.deleteTask import deleteTask
